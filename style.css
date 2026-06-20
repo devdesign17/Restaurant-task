@@ -102,6 +102,23 @@ body {
 }
 
 
+.menu-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=1200') no-repeat center center/cover;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.menu-hero h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+
 .menu-toggle {
     display: none;
     cursor: pointer;
@@ -114,6 +131,86 @@ body {
     margin: 5px auto;
     background-color: #fff;
     transition: all 0.3s ease-in-out;
+}
+
+.menu-controls {
+    margin: 40px auto 20px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.search-box {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+}
+
+.search-box i {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #777;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 12px 15px 12px 45px;
+    border: 2px solid #ddd;
+    border-radius: 30px;
+    outline: none;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.search-box input:focus {
+    border-color: #ffc107; 
+}
+
+.filter-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.filter-btn {
+    padding: 8px 20px;
+    border: 2px solid #333;
+    background: transparent;
+    color: #333;
+    font-weight: bold;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.filter-btn:hover, 
+.filter-btn.active {
+    background: #ffc107; 
+    border-color: #ffc107;
+    color: #1a1a1a;
+}
+
+.no-items {
+    text-align: center;
+    padding: 40px 0;
+    color: #777;
+    width: 100%;
+    grid-column: 1 / -1; 
+}
+
+.no-items i {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: #ccc;
+    display: block;
+}
+
+.hidden {
+    display: none !important;
 }
 
 .hero-section {
@@ -359,5 +456,11 @@ footer {
 
     .hero-content h1 {
         font-size: 2.3rem;
+    }
+      .menu-hero h1 {
+        font-size: 2rem;
+    }
+    .filter-buttons {
+        padding: 0 10px;
     }
 }

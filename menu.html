@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu-FlavorHaven</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo"> FlavorHaven</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html" class="active">Menu</a></li>
+                <li><a href="about.html" class="active">About Us</a></li>
+                <li><a href="review.html" class="active">Reviews</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="menu-hero">
+        <div class="hero-content">
+            <h1>Our Delicious Menu</h1>
+            <p>Craving something delicious? We've got you covered.</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="menu-controls">
+            <div class="search-box">
+                <i class="fas fa-search"></i>
+                <input type="text" id="search-input" placeholder="Search food items...">
+            </div>
+            
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-category="all">All</button>
+                <button class="filter-btn" data-category="fast-food">Fast Food</button>
+                <button class="filter-btn" data-category="burgers">Burgers</button>
+                <button class="filter-btn" data-category="pizza">Pizza</button>
+                <button class="filter-btn" data-category="bbq">BBQ</button>
+                <button class="filter-btn" data-category="drinks">Drinks</button>
+                <button class="filter-btn" data-category="desserts">Desserts</button>
+            </div>
+        </div>
+    </div>
+
+    <main class="container section">
+        <div class="dishes-grid" id="menu-grid">
+            </div>
+        <div id="no-items" class="no-items hidden">
+            <i class="fas fa-search-minus"></i>
+            <p>No food items match your search or filter.</p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-box">
+                <h3></h3>
+                <p>Fresh and delicious food items delivered directly to your doorstep.</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 FlavorHaven. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="menu.js"></script>
+</body>
+</html>
