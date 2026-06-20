@@ -53,6 +53,9 @@ const menuGrid = document.getElementById('menu-grid');
 const searchInput = document.getElementById('search-input');
 const filterBtns = document.querySelectorAll('.filter-btn');
 const noItems = document.getElementById('no-items');
+const menuToggle = document.querySelector('.menu-toggle');
+const navLinks = document.querySelector('.nav-links');
+
 
 window.addEventListener('DOMContentLoaded', () => {
     displayMenu(menuItems);
@@ -108,3 +111,10 @@ function filterAll() {
     
     displayMenu(filteredItems);
 }
+
+
+if(menuToggle && navLinks) {
+            menuToggle.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            });
+        }

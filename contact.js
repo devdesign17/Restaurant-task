@@ -6,6 +6,8 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
     const subject = document.getElementById('subject');
     const message = document.getElementById('message');
     const successBox = document.getElementById('formSuccess');
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
 
     let isValid = true;
 
@@ -52,3 +54,10 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
         successBox.classList.add('hidden');
     }
 });
+
+
+if(menuToggle && navLinks) {
+            menuToggle.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            });
+        }
