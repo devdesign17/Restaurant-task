@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us -FlavorHaven</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+ <i class="fa-solid fa-utensils"></i> FlavorHaven
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="contact-hero">
+        <div class="hero-content">
+            <h1>Contact Us</h1>
+            <p>Have questions or feedback? Reach out to us anytime!</p>
+        </div>
+    </header>
+
+    <section class="container section">
+        <div class="contact-wrapper">
+            
+            <div class="contact-info">
+                <div class="section-header" style="text-align: left; margin-bottom: 30px;">
+                    <h2>Get In Touch</h2>
+                    <p>We would love to hear from you.</p>
+                </div>
+                
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h3>Our Address</h3>
+                        <p>Chung Ammar Sidu, Ferozepur Road, Lahore, Pakistan</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <i class="fas fa-phone-alt"></i>
+                    <div>
+                        <h3>Phone Number</h3>
+                        <p>+92 300 1234567</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h3>Email Address</h3>
+                        <p>info@foodhaven.com</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form-container">
+                <form id="contactForm" novalidate>
+                    <div class="form-group">
+                        <label for="name">Full Name*</label>
+                        <input type="text" id="name" placeholder="Enter your name">
+                        <span class="error-msg" id="nameError">Name is required</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address*</label>
+                        <input type="email" id="email" placeholder="Enter your email">
+                        <span class="error-msg" id="emailError">Please enter a valid email</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subject*</label>
+                        <input type="text" id="subject" placeholder="Enter subject">
+                        <span class="error-msg" id="subjectError">Subject is required</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message*</label>
+                        <textarea id="message" rows="5" placeholder="Write your message here..."></textarea>
+                        <span class="error-msg" id="messageError">Message cannot be empty</span>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Send Message</button>
+                    <div id="formSuccess" class="success-box hidden">🎉 Thank you! Your message has been sent successfully.</div>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="map-section">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13612.34812345678!2d74.3456789!3d31.456789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391906789abcdef%3A0x123456789abcdef!2sLahore%2C%20Punjab%2C%20Pakistan!5e0!3m2!1sen!2s!4v1710000000000!5m2!1sen!2s" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-box">
+                <h3>FlavorHaven</h3>
+                <p>Fresh and delicious food items delivered directly to your doorstep.</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+           <p>&copy; 2026 FlavorHaven. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="contact.js"></script>
+</body>
+</html>
