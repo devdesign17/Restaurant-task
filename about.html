@@ -6,6 +6,15 @@
     <title>About Us - FoodHaven</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <script>
+         const menuToggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+if(menuToggle && navLinks) {
+            menuToggle.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            });
+        }
+    </script>
 </head>
 <body>
 
@@ -14,6 +23,11 @@
             <a href="index.html" class="logo">
                 <i class="fa-solid fa-utensils"></i> FlavorHaven
             </a>
+            <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
             </a>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
